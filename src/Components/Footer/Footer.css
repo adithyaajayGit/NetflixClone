@@ -1,0 +1,60 @@
+.footer {
+    height: 200px;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    margin-top: 50px;
+}
+
+.social-media-icons a {
+    margin-right: 25px;
+    color: grey;
+    font-size: 30px;
+}
+
+.social-media-icons a:hover {
+    color: grey;
+}
+
+.list-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list-items .column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.list-items a {
+    text-decoration: none;
+    color: grey;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.list-items a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.service-button button {
+    border: 1px solid;
+    background: none;
+    padding: 7px;
+    outline: none;
+    color: grey;
+    margin-bottom: 12px;
+    margin-top: 11px;
+    cursor: pointer;
+}
+
+.copyright p {
+    margin-bottom: 20px;
+    font-size: 12px;
+}

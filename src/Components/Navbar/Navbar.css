@@ -1,0 +1,175 @@
+.navbar{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav__black{
+    background-color: #111;
+}
+
+.navbar__logo{
+    position: fixed;
+    left: 20px;
+    width: 100px;
+    padding-left: 20px;
+}
+
+.navbar__avatar{
+    width: 30px;
+}
+
+
+.right__nav {
+    padding-top: 1px;
+    display: flex;
+    padding-left: 150px;
+}
+
+.right__nav nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.right__nav nav ul li{
+    list-style: none;
+}
+
+.right__nav nav ul a{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+}
+
+.active a{
+    font-weight: 700;
+}
+
+.left__nav {
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+    margin: auto;
+}
+
+.left__nav nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.left__nav nav ul li{
+    list-style: none;
+}
+
+.left__nav nav ul a{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+}
+
+.fas{
+    color: #fff;
+    font-size: larger;
+}
+
+.fa-caret-down{
+    font-size: medium;
+}
+
+.browse{
+    display: none;
+}
+
+nav.browse_nav{
+    display: flex;
+    align-items: center;
+    width: 0;
+}
+
+nav.browse_nav ul{
+    display: flex;
+    align-items: center;
+} 
+
+nav.browse_nav ul li{
+    list-style: none;
+}
+
+nav.browse_nav ul a{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    align-items: center;
+    color: white;
+}
+
+
+
+@media (max-width: 1090px) {
+    .navbar__logo {
+        left: 0px;
+    }
+
+    .hide__left_navlinks {
+        display: none;
+    }
+    .browse_nav {
+        padding-left: 115px;
+    }
+    .browse {
+        cursor: pointer;
+        display: block;
+    }
+
+    .left__nav {
+        padding-right: 10px;
+    }
+
+    .right__nav nav {
+        border-top: solid 1px lightgrey;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background-color: #111;
+        top: 60px;
+        left: 0;
+        transition: 0.5s;
+    }
+    
+    .right__nav .nav_active {
+        left: 0;
+    }
+
+    .right__nav .nav_notactive {
+        left: -100%;
+    }
+    
+    .right__nav nav ul {
+        display: block;
+    }
+    
+    .right__nav nav ul li a {
+        line-height: 60px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}

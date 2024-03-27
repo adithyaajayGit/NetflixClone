@@ -1,0 +1,68 @@
+.row{
+    margin-left: 20px;
+    color: #fff;
+
+}
+.posters{
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+.poster{
+    cursor: pointer;
+     max-height: 220px;
+     margin-right: 10px;
+     transition: transform 450ms;
+
+}
+
+.smallposter{
+    cursor: pointer;
+    max-height: 150px;
+    margin-right: 10px;
+    transition: transform 450ms;
+
+
+}
+
+.poster:hover{
+    transform: scale(1.08);
+    opacity: 1;
+
+}
+
+.smallposter:hover{
+    transform: scale(1.08);
+    opacity: 1;
+
+}
+
+.close-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .close-button:hover {
+    background-color: darkred; /* Change color on hover */
+  }
+
+  
+
+
+ 
+
+
+  
